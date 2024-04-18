@@ -1,0 +1,34 @@
+body {
+  margin: 0 30px;
+}
+.navigationBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: start;
+  list-style-type: none;
+  gap: 20px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.navigationBar ul li {
+  cursor: pointer;
+}
+
+.navigationBar {
+  padding: 10px;
+}
+
+.navigationBar ul ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  row-gap: 20px;
+}
+.navigationBar ul ul {
+  display: none;
+}
+.show {
+  display: flex !important;
+}
