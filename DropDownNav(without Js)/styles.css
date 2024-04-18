@@ -1,0 +1,32 @@
+ul {
+  list-style: none;
+  background-color: blueviolet;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+ul li a {
+  padding: 20px 25px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+ul li a:hover {
+  background-color: rgb(174, 112, 232);
+}
+ul li:hover ul.dropDown {
+  display: block;
+}
+ul li ul.dropDown {
+  position: absolute;
+  display: none;
+}
