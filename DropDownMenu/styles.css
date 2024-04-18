@@ -1,34 +1,37 @@
 body {
   margin: 0 30px;
 }
-.navigationBar ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-items: start;
-  list-style-type: none;
-  gap: 20px;
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-.navigationBar ul li {
-  cursor: pointer;
-}
-
 .navigationBar {
   padding: 10px;
 }
-
-.navigationBar ul ul {
-  margin-top: 20px;
+.nav-items {
   display: flex;
-  flex-direction: column;
-  padding: 0;
-  row-gap: 20px;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  list-style-type: none;
+  gap: 30px;
+  border-collapse: collapse;
+  border: 1px solid black;
 }
-.navigationBar ul ul {
-  display: none;
+.nav-item li {
+  cursor: pointer;
+}
+.dropDown ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column !important;
+  padding: 0;
+  margin-top: 20px;
+  gap: 10px;
+  list-style-type: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+  transform: translateY(0.5rem);
 }
 .show {
-  display: flex !important;
+  transform: translateY(0rem) !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }

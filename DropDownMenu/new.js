@@ -1,15 +1,11 @@
-const base = document.querySelectorAll('.nav-items');
-base.forEach((element) => {
+const dropDownMenus = document.querySelectorAll('.dropDown');
+dropDownMenus.forEach((element) =>
   element.addEventListener('click', function (e) {
     e.stopPropagation();
-    handleClick(e);
-  });
-});
-function handleClick(event) {
-  classes = event.target.children[0].classList;
-  if (classes.length === 0) {
-    classes.add('show');
-  } else {
-    classes.remove('show');
-  }
+    toggleDropDown(e);
+  })
+);
+function toggleDropDown(e){
+e.target.childNodes[1].classList.toggle('show')
 }
+
