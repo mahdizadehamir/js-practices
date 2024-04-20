@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Note App</title>
+  </head>
+  <body>
+    <div class="notes" id="app">
+      <div class="notes__sidebar">
+        <button class="notes__add" type="button">Add Notes</button>
+        <div class="notes__list">
+          <div class="notes__list-item notes__list-item--selected">
+            <div class="notes__small-title">Lecture Notes</div>
+            <div class="notes__small-body">Lecture Body</div>
+            <div class="notes__small-updated">Thursday 5pm</div>
+          </div>
+        </div>
+      </div>
+      <div class="notes__preview">
+        <input class="notes__title" type="text" placeholder="Enter title" />
+        <textarea class="notes__body">Enter A Body</textarea>
+      </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
